@@ -1,69 +1,73 @@
-.main-container {
-    display: flex;
-    justify-content: center; 
-    align-items: center;    
-    height: 100%;         
+html,
+body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     margin: 0;
-    justify-content: center;
+    padding: 0;
+    overflow: hidden;
 }
 
-.main {
-    width: 50%;
+body {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+nav {
+    grid-row: 1;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    padding: 20%;
-    color: rgb(71, 71, 71);
+    font-weight: bold;
+    font-size: small;
 }
 
-.titles {
+nav div {
+    position: relative;
+    display: inline-flex;
+    list-style-type: none;
+    float: right;
+    gap: 4%;
+    padding: 2em 6em 0 0;
+}
+
+nav a {
     color: rgb(96, 96, 96);
-    font-size: small;
-}
-
-.main-title{
-    font-size: xx-large;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
-}
-
-.main-intro {
-    margin: 0;
-    padding: 0;
-}
-
-.main-sub-header {
-    font-size: small;
-    font-weight: bold;
-}
-
-.links-container {
-    display: flex;
-    gap: 2%;
-    justify-content: center;
-}
-.links-container img {
-    width: 48px;
-    height: 48px;
-    object-fit: contain;
-    object-position: center;
-}
-
-.links-button {
-    color: rgb(71, 71, 71);
+    background-color: transparent;
     border: none;
-    font-size: small;
-    font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
+    width: 128px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
 }
-.links-button:hover {
+
+nav a:hover {
     color: rgb(116, 116, 116);
     transition: color 0.1s ease;
 }
 
-.divider-line {
-    border: none;
-    border-top: 0.05em solid rgb(116, 116, 116);
-    width: 20em;
+nav a.Active {
+    pointer-events: none;
+    border: 0.05em solid rgb(96, 96, 96);
+    color: rgb(96, 96, 96);
+    background-color: transparent;
+    text-decoration: none;
+    width: 128px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
 }
 
+nav a.Active:hover {
+    border: 0.05em solid rgb(116, 116, 116);
+    color: rgb(116, 116, 116);
+    transition: color 0.1s ease;
+}
+
+iframe {
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
