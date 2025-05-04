@@ -1,0 +1,90 @@
+body,
+html {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container {
+    display: grid;
+    height: 100%;
+    grid-template-rows: 1fr auto 1fr;
+}
+
+.main {
+    grid-row: 2;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: rgb(71, 71, 71);
+}
+
+.paragraphs-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraphs {
+    width: clamp(50px, 50vw, 800px);
+    color: rgb(96, 96, 96);
+    text-align: center;
+    font-size: small;
+    justify-content: center;
+}
+
+.links-button {
+    color: rgb(71, 71, 71);
+    border: none;
+    font-size: small;
+    font-weight: bold;
+    text-decoration: none;
+}
+.links-button:hover {
+    color: rgb(116, 116, 116);
+    transition: color 0.1s ease;
+}
+
+.divider-line {
+    border: none;
+    border-top: 0.05em solid rgb(116, 116, 116);
+    width: 20em;
+}
+
+.education-section-container {
+    display: grid;
+    justify-content: center;
+}
+
+.education-section {
+    display: inline-flex;
+    justify-content: left;
+    
+}
+
+.education-section-title-container {
+    justify-content: center;
+    padding-left: 12px;
+    margin-top: 12px;
+
+}
+
+.education-section-header {
+    font-size: small;
+    text-align: left;
+}
+
+.education-section-footer {
+    font-size: x-small;
+    text-align: left;
+}
+
+.education-section img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    object-position: center;
+}
