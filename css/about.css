@@ -32,14 +32,14 @@ html {
     width: clamp(50px, 50vw, 800px);
     color: rgb(96, 96, 96);
     text-align: center;
-    font-size: small;
+    font-size: medium;
     justify-content: center;
 }
 
 .links-button {
     color: rgb(71, 71, 71);
     border: none;
-    font-size: small;
+    font-size: medium;
     font-weight: bold;
     text-decoration: none;
 }
@@ -61,24 +61,22 @@ html {
 
 .education-section {
     display: inline-flex;
-    justify-content: left;
-    
+    justify-content: left;  
 }
 
 .education-section-title-container {
     justify-content: center;
     padding-left: 12px;
     margin-top: 12px;
-
 }
 
 .education-section-header {
-    font-size: small;
+    font-size: medium;
     text-align: left;
 }
 
 .education-section-footer {
-    font-size: x-small;
+    font-size: small;
     text-align: left;
 }
 
